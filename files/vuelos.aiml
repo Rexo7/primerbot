@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+ <category>
+    <pattern>HOLI</pattern>
+    <template>
+        <random>
+            <li>Bienvenid@. ¿Cómo podemos ayudarte el día de hoy?</li>
+            <li>Buen día ¿a dónde volamos hoy??</li>
+            <li>Volando... ¿vienes?</li>
+            <li>¿Qué se arma hoy?</li>
+        </random>
+    </template>
+  </category>
+  
+  <category>
+      <pattern>VOLAR</pattern>
+      <template>¡Excelente!, ¿a dónde volamos?</template>
+  </category>
+  
+    <category>
+    <pattern>QUIERO VOLAR</pattern>
+    <template>
+          <srai>VOLAR</srai>
+    </template>
+  </category>
+  
+    <category>
+    <pattern>* EXPLORAR</pattern>
+    <template>
+          <srai>VOLAR</srai>
+    </template>
+  </category>
+  
+      <category>
+    <pattern>* VOLAR</pattern>
+    <template>
+          <srai>VOLAR</srai>
+    </template>
+  </category>
+  
+  
+    <category>
+      <pattern> DESTINO </pattern>
+      <template>Excelente decisión de volar a <star/>, ¿cuantos pasajeros son?</template>
+  </category>
+  
+    <category>
+      <pattern> QUIERO VOLAR A *</pattern>
+      <template>
+                <srai>DESTINO</srai>
+      </template>
+  </category>
+  
+  
+    <category>
+      <pattern> QUIERO IR A *</pattern>
+      <template>
+                <srai>DESTINO</srai>
+      </template>
+  </category>
+  
+    <category>
+     <pattern> VOY PARA *</pattern>
+     <template>
+                <srai>DESTINO</srai>
+      </template>
+  </category>
+  
+  
+    <category>
+     <pattern> PASAJEROS </pattern>
+        <template>
+            <random>
+                <li>Me parece perfecto, tomando nota de los <star/> pasajeros, ¿en qué temporada le gustaría viajar?</li>
+                <li>Ahora sé que son <star/> pasajeros, ¿en qué temporada viajamos?</li>
+            </random>
+        </template>
+  </category>
+  
+    <category>
+     <pattern> SOMOS * PASAJEROS </pattern>
+     <template>
+                <srai>PASAJEROS</srai>
+      </template>
+  </category>
+  
+    <category>
+     <pattern>* PASAJEROS</pattern>
+     <template>
+                <srai>PASAJEROS</srai>
+      </template>
+    </category>
+  
+  
+    <category>
+     <pattern> TEMPORADA </pattern>
+        <template>
+            <random>
+                <li>Uff, me encanta viajar en <star/> temporada, ¿con cuánto presupuesto cuentas?</li>
+                <li>Perfecto, entonces viajamos en temporada <star/>, ¿con cuánto presupuesto cuentas?</li>
+            </random>
+        </template>
+  </category>
+  
+  <category>
+      <pattern>PRESUPUESTO</pattern>
+      <template>Perfecto, entonces viajamos con <star/> presupuesto, buscaré vuelos para ti </template>
+  </category>
+  
+  
+  <category>
+      <pattern>TENGO * PRESUPUESTO</pattern>
+      <template>
+                <srai>PRESUPUESTO</srai>
+      </template>
+  </category>
+  
+    <category>
+      <pattern>CUENTO CON * PRESUPUESTO</pattern>
+      <template>
+                <srai>PRESUPUESTO</srai>
+      </template>
+  </category>
+  
+    <category>
+      <pattern>MI PRESUPUESTO ES *</pattern>
+      <template>
+                <srai>PRESUPUESTO</srai>
+      </template>
+  </category>
+  
+ </aiml>
